@@ -12,10 +12,12 @@
       </p>
       <p v-if="errorMess" class="error-message">{{ errorMess }}</p>
     </div>
-    <textarea class="output-string" v-model="base64" readonly />
-    <div class="actions-container">
-      <button class="btn-primary" @click.prevent="copyCode" :disabled="!isFileChanged">Copy to clipboard</button>
-      <button class="btn-secondary" @click.prevent="resetToInitialState">Clear</button>
+    <div v-if="isFileChanged">
+      <textarea class="output-string" v-model="base64" readonly />
+      <div class="actions-container">
+        <button class="btn-primary" @click.prevent="copyCode" :disabled="!isFileChanged">Copy to clipboard</button>
+        <button class="btn-secondary" @click.prevent="resetToInitialState">Clear</button>
+      </div>
     </div>
   </div>
 </template>
