@@ -3,7 +3,7 @@
     <img alt="Branding" class="app-branding" src="./assets/logo.png">
     <p class="app-name">Base64 DataURI generator</p>
     <router-view/>
-    <p class="app-footer">Made with <span class="red">♥</span> my <a href="https://tammai.me">Tam M.</a></p>
+    <p class="app-footer">Made with <span class="red">♥</span> by <a href="https://tammai.me">Tam M.</a></p>
   </div>
 </template>
 
@@ -29,7 +29,7 @@ body {
 .container {
   max-width: 64rem;
   margin: 0 auto;
-  padding: 4rem;
+  padding: 4rem 2.4rem;
 }
 
 .app-name {
